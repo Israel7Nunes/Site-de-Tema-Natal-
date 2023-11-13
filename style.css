@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+@font-face{
+    font-family: mountis;
+    src: url(fonts/MOUNTIS.otf);
+}
+
+@font-face{
+    font-family: ketika;
+    src: url(fonts/Ketika-Light.ttf);
+}
+
+@font-face{
+    font-family: libertine;
+    src: url(fonts/LinLibertine_DR.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    background-color: #DDF7E3;
+}
+
+header{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+header h1{
+    text-align: center;
+    color: #DF2E38;
+    font-family: mountis;
+    font-size: 3.5em;
+}
+
+.article1 p{
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: justify;
+    font-size: 1.5em;
+    font-family: libertine;
+}
+
+h1, h2{
+    font-weight: 800;   
+    text-transform: uppercase;
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+main{
+    display: block;
+}
+
+.container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 25px;
+    animation: mario 5s ease-in-out;
+}
+
+section.modulo p{
+    margin-bottom: 30px;
+    text-align: justify;
+    font-size: 1.5em;
+    font-family: libertine;
+}
+
+section.modulo h2{
+    margin-bottom: 30px;
+    font-size: 2em;
+    letter-spacing: .5em;
+    text-align: center;
+    color: #D4D925;
+    text-shadow: -1px 0px 1px rgb(97, 100, 5);
+    font-family: ketika;
+}  
+
+section.modulo.content{
+    padding: 40px 0;
+    
+}
+
+section.modulo.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.modulo.parallax h1{
+    color: #DF2E38;
+    text-shadow: 3px 3px 4px #df2e379f;
+    text-align: center;
+    font-size: 4.5em;
+    z-index: 100;
+        
+}
+
+section.modulo.parallax::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 30%, #333333 100%);
+}
+
+
+section.modulo.parallax-1{
+    background-image: url(https://cdn.pixabay.com/photo/2019/12/26/15/16/christmas-4720604_1280.jpg);
+}
+
+section.modulo.parallax-2{
+    background-image: url(https://cdn.pixabay.com/photo/2017/11/24/20/01/christmas-cookies-2975570_1280.jpg);
+}
+
+section.modulo.parallax-3{
+    background-image: url(https://cdn.pixabay.com/photo/2020/04/22/12/11/brand-5077789_1280.jpg);
+}
+
+section.modulo.parallax-4{
+    background-image: url(https://plus.unsplash.com/premium_photo-1664392434825-eb95db0931d4?q=80&w=1500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+footer{
+    margin-top: 5%;
+    background-color: #5D9C59;
+    color: #DDF7E3; 
+      
+}
+
+footer h3{
+    margin-left: 8%;
+}
+
+footer img{
+    margin-left: 2%;
+    width: 4%;
+}
+
+footer .img3{
+    width: 7%;
+    margin-left: 1%;
+}
+
